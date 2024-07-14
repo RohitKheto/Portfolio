@@ -753,7 +753,7 @@ body {
 }
 
 .card {
-    width: 380px;
+    min-width: 380px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -767,7 +767,7 @@ body {
 }
 
 .card:hover {
-    height: 330px;
+    height: 350px;
 }
 
 .card:hover .card-image {
@@ -777,7 +777,7 @@ body {
 }
 
 .card-image {
-    width: 360px;
+    min-width: 360px;
     border-radius: 15px;
     position: absolute;
     top: 9px;
@@ -1026,7 +1026,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0rem 1rem;
 }
 
 .progress-circle-content p {
@@ -1401,13 +1400,13 @@ textarea.input {
     #project,
     #skills
     #contact {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .education-experience {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
     form {
         padding: 1rem;
@@ -1418,5 +1417,38 @@ textarea.input {
     .contact-info {
         padding: 2.3rem 1rem;
     }
-
+    .card {
+        min-width: 300px;
+    }
+    .card-image {
+        min-width: 280px;
+    }
+    .social-media-btn {
+        gap: 0.5rem;
+    }
+    
+    .social-media-btn a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+    }
+    
+    .social-media-btn i {
+        font-size: 1rem;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+    }
+    
+    .social-media-btn span {
+        margin-left: 0.4rem;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    
+    .social-media-btn a:hover {
+        width: 150px;
+    }
 }
