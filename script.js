@@ -4,6 +4,9 @@ const education_experience = document.querySelectorAll(".education-experience");
 const progressCircles = document.querySelectorAll('.circle-progress');
 const mode_theme = document.querySelector("#mode-theme");
 const color_theme = document.querySelector("#color-theme");
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-section li a');
+
 let isDark = true;
 
 nav_btn.addEventListener('click', () => {
@@ -64,3 +67,33 @@ function colorChange(primary, dark, light) {
     document.documentElement.style.setProperty('--primary-color-dark', dark);
     document.documentElement.style.setProperty('--primary-color-light', light);
 }
+
+window.onscroll = () => {
+    let top = window.scrollY;
+    
+    sections.forEach(sec => {
+        let offset = sec.offsetTop-150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active-section');
+            });
+
+            let activeLink = document.querySelector('.nav-section li a[href*=' + id + ']');
+            if (activeLink) {
+                activeLink.classList.add('active-section');
+            }
+        }
+    });
+};
+
+var typed = new Typed('.auto-type', {
+    strings: ['Web Developer', 'Web Designer', 'Competitive Coder'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 500,
+    loop: true
+  });
+  
