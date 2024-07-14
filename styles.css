@@ -121,7 +121,9 @@ body {
     padding-left: 1rem;
 }
 
-.nav-section li:hover a {
+.nav-section li:hover a,
+.nav-section li a.active-section
+{
     color: white;
     background-color: var(--primary-color);
 }
