@@ -140,7 +140,7 @@ body {
     left: 76px;
     padding: 0.8rem 1rem;
     background-color: var(--primary-color);
-    width: 100px;
+    min-width: 100px;
     border-radius: 10px;
     opacity: 1;
     display: none;
@@ -1451,6 +1451,10 @@ textarea.input {
     }
     
     .social-media-btn a:hover {
-        width: 130px;
+        width: 140px;
+    }
+    .tooltip{
+        display: none;
+        opacity: 0;
     }
 }
