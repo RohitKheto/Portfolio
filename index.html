@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -100,7 +102,7 @@
     </div>
     <div class="other-content">
         <!-- Home section -->
-        <section id="home">
+        <section id="home" data-aos="zoom-in">
             <div class="home-text">
                 <p>Hello,</p>
                 <p class="identity">I am <span>Rohit Kheto</span></p>
@@ -118,7 +120,8 @@
                         <i class="fa-brands fa-facebook-f"></i>
                         <span>Facebook</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/rohit-kheto-610266284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <a
+                        href="https://www.linkedin.com/in/rohit-kheto-610266284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         <i class="fa-brands fa-linkedin-in"></i>
                         <span>Linkedin</span>
                     </a>
@@ -144,7 +147,7 @@
 
         <!-- About section -->
         <section id="about">
-            <div class="about-image-section">
+            <div class="about-image-section" data-aos="slide-right">
                 <img class="about-img" src="img2.png" alt="About Image">
                 <img class="about-img" src="img2.png" alt="About Image">
                 <img class="about-img" src="img2.png" alt="About Image">
@@ -152,7 +155,7 @@
                 <img class="about-img" src="img2.png" alt="About Image">
                 <img class="about-img" src="img2.png" alt="About Image">
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="slide-left">
                 <h3>Who am I?</h3>
                 <h1>
                     I'm Rohit Kheto, a Frontend Developer and Competitive Programmer
@@ -174,9 +177,9 @@
         </section>
 
         <!-- Education section -->
-        <section id="education" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500">
+        <section id="education" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
             <h1>Education</h1>
-            <div class="education-experience-container clearfix">
+            <div class="education-experience-container clearfix" data-aos="slide-right">
                 <div class="education-experience-content">
                     <h3>Secondary School Degree</h3>
                     <p>I am a dedicated and high-achieving student, having completed my secondary school degree from
@@ -203,9 +206,9 @@
         </section>
 
         <!-- Expirence section -->
-        <section id="experience" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500">
+        <section id="experience" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
             <h1>Experience</h1>
-            <div class="education-experience-container clearfix">
+            <div class="education-experience-container clearfix" data-aos="slide-left">
                 <div class="education-experience-content">
                     <h3>InternPe</h3>
                     <p class="date2">Jul 2023 - Aug 2023</p>
@@ -234,7 +237,7 @@
         <section id="skills">
             <h1>My Skills</h1>
             <div class="skill-container">
-                <div class="line-progress">
+                <div class="line-progress" data-aos="zoom-in-right">
                     <h3>Technical Skills</h3>
                     <div class="line-progress-bar">
                         <i class='bx bxl-html5' style="color: rgb(252, 86, 25);"></i>
@@ -279,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="circular-progress">
+                <div class="circular-progress" data-aos="zoom-in-left">
                     <h3>Professional Skills</h3>
                     <div class="circular-progress-container">
                         <div class="progress-circle-content">
@@ -315,7 +318,7 @@
         <section id="project">
             <h1>Projects</h1>
             <div class="card-container">
-                <div class="card">
+                <div class="card" data-aos="slide-right">
                     <div class="card-image">
                         <img src="proj1.png" alt="">
                     </div>
@@ -337,7 +340,7 @@
                         <a href="https://rohitkheto.github.io/Recipe/" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-left">
                     <div class="card-image">
                         <img src="proj3.png" alt="">
                     </div>
@@ -348,7 +351,7 @@
                         <a href="https://rohitkheto.github.io/flipkart/" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-right">
                     <div class="card-image">
                         <img src="proj4.png" alt="">
                     </div>
@@ -367,46 +370,54 @@
                         <h3>Fast Food Centre</h3>
                         <div class="description">A Python Tkinter application for a food center with a bill system to
                             calculate, generate, and download bills seamlessly.</div>
-                        <a href="https://github.com/RohitKheto/bill_management" class="btn" target="_blank">View Project</a>
+                        <a href="https://github.com/RohitKheto/bill_management" class="btn" target="_blank">View
+                            Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-left">
                     <div class="card-image">
                         <img src="proj6.png" alt="">
                     </div>
                     <div class="card-content">
                         <h3>Knowledge Junction</h3>
-                        <div class="description">An educational website offering multimedia resources for various courses, including a chat application for assistance and a timer to aid in focused study sessions.</div>
+                        <div class="description">An educational website offering multimedia resources for various
+                            courses, including a chat application for assistance and a timer to aid in focused study
+                            sessions.</div>
                         <a href="https://rohitkheto.github.io/SIH/" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-right">
                     <div class="card-image">
                         <img src="proj7.png" alt="">
                     </div>
                     <div class="card-content">
                         <h3>All World News</h3>
-                        <div class="description">A comprehensive global news website providing up-to-date coverage of news from around the world, covering diverse topics and regions.</div>
+                        <div class="description">A comprehensive global news website providing up-to-date coverage of
+                            news from around the world, covering diverse topics and regions.</div>
                         <a href="https://rohitkheto.github.io/News/" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-up">
                     <div class="card-image">
                         <img src="proj8.png" alt="">
                     </div>
                     <div class="card-content">
                         <h3>CalculateAllInOne</h3>
-                        <div class="description">A versatile calculator website featuring a simple calculator, BMI calculator, length, temperature, and weight converter for easy and accurate calculations.</div>
-                        <a href="https://rohitkheto.github.io/Calculator-Converter/" class="btn" target="_blank">View Project</a>
+                        <div class="description">A versatile calculator website featuring a simple calculator, BMI
+                            calculator, length, temperature, and weight converter for easy and accurate calculations.
+                        </div>
+                        <a href="https://rohitkheto.github.io/Calculator-Converter/" class="btn" target="_blank">View
+                            Project</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="slide-left">
                     <div class="card-image">
                         <img src="proj9.png" alt="">
                     </div>
                     <div class="card-content">
                         <h3>ClockMaster</h3>
-                        <div class="description">A clock website featuring a digital and analog clock display, timer, stopwatch, and alarm functionalities for accurate time management and scheduling.</div>
+                        <div class="description">A clock website featuring a digital and analog clock display, timer,
+                            stopwatch, and alarm functionalities for accurate time management and scheduling.</div>
                         <a href="https://rohitkheto.github.io/clock/" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
@@ -414,7 +425,7 @@
         </section>
 
         <!-- Contact section -->
-        <section id="contact">
+        <section id="contact" data-aos="zoom-in">
             <div class="form">
                 <div class="contact-info">
                     <h3 class="title">Let's get in touch</h3>
@@ -444,7 +455,8 @@
                                 <i class="fa-brands fa-facebook-f"></i>
                                 <span>Facebook</span>
                             </a>
-                            <a href="https://www.linkedin.com/in/rohit-kheto-610266284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <a
+                                href="https://www.linkedin.com/in/rohit-kheto-610266284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <i class="fa-brands fa-linkedin-in"></i>
                                 <span>Linkedin</span>
                             </a>
@@ -489,9 +501,20 @@
 
         </section>
     </div>
+    <!-- Card Tilt Effect -->
     <script src="vanilla-tilt.js"></script>
+    <!-- Type Effect in Home section -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Adding my javascript file -->
     <script src="script.js"></script>
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 700,
+        });
+    </script>
 </body>
 
 </html>
