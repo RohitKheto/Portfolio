@@ -181,6 +181,7 @@ body {
     left: 80px;
     width: 94.5%;
     transition: all 0.5s ease;
+    overflow:hidden;
 }
 
 #home {
