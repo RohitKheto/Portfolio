@@ -181,7 +181,7 @@ body {
     left: 80px;
     width: 94.5%;
     transition: all 0.5s ease;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #home {
@@ -951,12 +951,12 @@ span {
     width: 75%;
 }
 
-.progress-bar .bootstrap::before {
-    content: '80%';
+.progress-bar .react::before {
+    content: '60%';
 }
 
-.progress-bar .bootstrap {
-    width: 80%;
+.progress-bar .react {
+    width: 60%;
 }
 
 .progress-bar .c::before {
